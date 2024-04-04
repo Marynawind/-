@@ -1,0 +1,225 @@
+
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-image: url('img.jpg');
+    background-size: cover; /* Установите размеры фоновых изображений */
+    background-position: cover; /* Установите позиции фоновых изображений */
+    color: rgb(255, 255, 255);
+    list-style: none;
+}
+
+header {
+    background-image: url('ltd-2.png');  
+    background-position: center 240px;   
+    background-repeat: no-repeat; 
+    color: rgb(0, 0, 0);
+    padding: 100px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500px;
+    text-shadow: 8px 8px 8px rgb(73, 73, 73);
+    }
+
+.phone-icon {
+    position: fixed;
+    top: 50px; /* Отступ от верхнего края */
+    right: 50px; /* Отступ от правого края */
+}
+
+.phone-icon a img {
+    width: 70px; /* Устанавливаем размер иконки телефона */
+    height: 70px;
+    transition: transform 0.3s ease; 
+}
+
+.phone-icon a img:hover {
+    transform: scale(2); /* Увеличиваем размер иконки при наведении на неё */
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: 250px; 
+}
+
+nav ul li a:hover {
+    color:rgb(0, 0, 0); /* Цвет при наведении курсора */
+    font-size: 70px; /* Увеличиваем размер шрифта при наведении */
+    transition: font-size 0.3s ease;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: left;
+}
+
+section {
+    padding: 200px;
+}
+
+p {
+    width: 50%;
+}
+table {
+    width: 50%;
+}
+.text-blockabout {
+    border-radius: 30px;
+    background: rgba(69, 72, 80, 0.8);
+    text-align: left;
+    padding: 10px;
+    margin-top: 30px;
+    width: 80%; /* Ширина блока равна 90% ширины экрана */
+    margin-left: auto; /* Центрируем блок по горизонтали */
+    margin-right: auto;
+    background-image: url('one.png');
+    background-position: right; 
+    background-size: 50%;
+    background-repeat: no-repeat; 
+}
+    .text-blockservices {
+        border-radius: 30px;
+        background:rgb(73, 73, 73, 0.3);
+        text-align: left;
+        padding: 10px;
+        margin-top: 30px;
+        width: 80%; /* Ширина блока равна 90% ширины экрана */
+        margin-left: auto; /* Центрируем блок по горизонтали */
+        margin-right: auto;
+        background-image: url('two.png');
+        background-position: right; 
+        background-size: 50%;
+        background-repeat: no-repeat; 
+    }
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Форма контактов */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: rgb(250, 250, 250);
+}
+
+form input[type="text"],
+form input[type="telephone"],
+form input[type="email"],
+form textarea {
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 20px;
+
+}
+
+form button {
+    background-color:rgb(73, 73, 73);
+    color:  rgb(250, 250, 250);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    float: left; /* Помещаем кнопку слева */
+    margin-right: 40px;
+    font-size: 25px;
+}
+/* Мобильные стили до 700px */
+@media only screen and (max-width: 700px) {
+    header {
+        padding: 30px; /* Уменьшаем отступы заголовка */
+        font-size: 20px; /* Уменьшаем размер шрифта заголовка */
+        background-image: url('ltd-2.png');  
+        background-position: center; 
+        width: 80%;
+        background-repeat: no-repeat;
+    }
+
+    .text-blockabout,
+    .text-blockservices {
+        width: 100%; /* Ширина блоков на всю ширину экрана */
+        padding: 20px; /* Увеличиваем отступы в блоках */
+        background-position: center bottom;  
+        background-repeat: no-repeat;
+        min-height: 200px; /* Минимальная высота блоков, чтобы изображения были видны */
+    }
+
+    p {
+        width: 100%; /* Ширина параграфов на всю ширину экрана */
+    }
+
+    table {
+        width: 100%; /* Ширина таблиц на всю ширину экрана */
+    }
+
+    label {
+        width: 100%; /* Ширина меток формы на всю ширину экрана */
+    }
+
+    .phone-icon {
+        text-align: center; /* Центрируем иконку телефона */
+    }
+
+    nav ul {
+        text-align: center; /* Центрируем элементы навигации */
+    }
+
+    form input[type="text"],
+    form input[type="telephone"],
+    form input[type="email"],
+    form textarea {
+        width: 100%; /* Ширина полей формы на всю ширину экрана */
+        margin-bottom: 10px; /* Уменьшаем отступ снизу полей формы */
+    }
+
+    form button {
+        width: 100%; /* Ширина кнопки формы на всю ширину экрана */
+        margin-right: 0; /* Убираем отступ справа */
+    }
+}
+
+
+
+.text-blockabout .block-image,
+.text-blockservices .block-image {
+    position: relative;
+    display: block;
+    margin: 0 auto 10px; /* Регулируйте отступы по вашему усмотрению */
+    width: 50%; /* Регулируйте размер изображения по вашему усмотрению */
+    max-width: 200px; /* Максимальная ширина изображения */
+    text-align: center;
+}
+
+.text-blockabout p,
+.text-blockservices p {
+    margin-top: 10px; /* Отступ между изображением и текстом */
+}
+.text-blockabout {
+    background-image: url('one.png');
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    margin-top: 10px; 
+}
+    .text-blockservices {
+        
+    background-image: url('two.png');
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    margin-top: 10px; 
+       
+    }
