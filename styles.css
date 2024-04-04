@@ -144,8 +144,7 @@ form button {
         padding: 30px; /* Уменьшаем отступы заголовка */
         font-size: 20px; /* Уменьшаем размер шрифта заголовка */
         background-image: url('img.jpg');  
-        background-position: center; 
-        width: 80%;
+        background-position: cover; 
         background-repeat: no-repeat;
     }
 
