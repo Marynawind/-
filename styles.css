@@ -139,31 +139,56 @@ form button {
     margin-right: 40px;
     font-size: 25px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     header {
-        padding: 30px; /* Уменьшаем отступы заголовка */
-        font-size: 20px; /* Уменьшаем размер шрифта заголовка */
-        background-image: url('img.jpg');  
-        background-size: cover; /* Установите размеры фоновых изображений */
-        background-position: cover; /* Установите позиции фоновых изображений */
-        background-repeat: no-repeat;
+        padding: 20px;
+        font-size: 20px;
     }
-
+    
     .phone-icon {
-        text-align: center; /* Центрируем иконку телефона */
+        top: 10px;
+        right: 10px;
     }
-
-.text-blockabout {
-    background-image: url('one.png');
-    background-size: 100%;
-    background-repeat: no-repeat; 
-    margin-top: 10px; 
+    
+    .phone-icon a img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    nav ul {
+        margin-top: 10px;
+    }
+    
+    nav ul li a:hover {
+        font-size: 40px;
+    }
+    
+    section {
+        padding: 50px;
+    }
+    
+    p, table {
+        width: 100%;
+    }
+    
+    .text-blockabout, .text-blockservices {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    form label {
+        font-size: 16px;
+    }
+    
+    form input[type="text"],
+    form input[type="telephone"],
+    form input[type="email"],
+    form textarea {
+        width: 100%;
+    }
+    
+    form button {
+        width: 100%;
+        font-size: 16px;
+    }
 }
-    .text-blockservices {
-        
-    background-image: url('two.png');
-    background-size: 100%;
-    background-repeat: no-repeat; 
-    margin-top: 10px; 
-       
-    }
