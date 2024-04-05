@@ -144,7 +144,8 @@ form button {
         padding: 30px; /* Уменьшаем отступы заголовка */
         font-size: 20px; /* Уменьшаем размер шрифта заголовка */
         background-image: url('img.jpg');  
-        background-position: cover; 
+        background-size: cover; /* Установите размеры фоновых изображений */
+        background-position: cover; /* Установите позиции фоновых изображений */
         background-repeat: no-repeat;
     }
 
@@ -182,7 +183,6 @@ form button {
     form input[type="email"],
     form textarea {
         width: 100%; /* Ширина полей формы на всю ширину экрана */
-        margin-bottom: 10px; /* Уменьшаем отступ снизу полей формы */
     }
 
     form button {
