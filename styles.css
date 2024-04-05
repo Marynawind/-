@@ -144,6 +144,9 @@ form button {
         padding: 20px;
         font-size: 20px;
     }
+    .text-blockabout, .text-blockservices {
+        background-size: cover; /* Измените размер фонового изображения для мобильных устройств */
+    }
     
     .phone-icon {
         top: 10px;
