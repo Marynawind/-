@@ -84,6 +84,7 @@ table {
     background-image: url('one.png');
     background-position: right; 
     background-size: 50%;
+    background-size: cover; 
     background-repeat: no-repeat; 
 }
     .text-blockservices {
@@ -98,6 +99,7 @@ table {
         background-image: url('two.png');
         background-position: right; 
         background-size: 50%;
+        background-size: cover; 
         background-repeat: no-repeat; 
     }
 
