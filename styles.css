@@ -191,22 +191,6 @@ form button {
     }
 }
 
-
-
-.text-blockabout .block-image,
-.text-blockservices .block-image {
-    position: relative;
-    display: block;
-    margin: 0 auto 10px; /* Регулируйте отступы по вашему усмотрению */
-    width: 50%; /* Регулируйте размер изображения по вашему усмотрению */
-    max-width: 200px; /* Максимальная ширина изображения */
-    text-align: center;
-}
-
-.text-blockabout p,
-.text-blockservices p {
-    margin-top: 10px; /* Отступ между изображением и текстом */
-}
 .text-blockabout {
     background-image: url('one.png');
     background-size: 100%;
